@@ -29,11 +29,11 @@ if __name__ == '__main__':
     # min_N = 10000
     # max_N = 100000
     # step = 10000
-    N = 500000
+    N = 20000000
     #funcs = [list_primes, sieve_primes, sieve_primes_linear]
     #func_names = ["list_primes", "sieve_primes", "sieve_primes_linear"]
-    funcs = [sieve_primes_antic]
-    func_names = ["sieve_primes_antic"]
+    funcs = [sieve_primes_linear, sieve_primes]
+    func_names = ["sieve_primes_linear", sieve_primes]
     times = performance_test(num_tests, N, funcs, func_names)
     for time in times:
         print(str(time))
